@@ -1,0 +1,16 @@
+# Introduction
+  
+#### Leaflet is one of the most popular Javascript libraries for creating interactive maps. The leaflet R package allows you to create your own leaflet maps without needing to know any Javascript!
+
+## My First Map
+
+#### Getting started with leaflet is easy. The `leaflet()` function creates a map widget that you can store in a variable so that you can modify the map later on. You can add features to the map using the pipe operator (`%>%`) just like in dplyr. The `addTiles()` function adds mapping data from [Open Street Map](http://www.openstreetmap.org/).
+
+## My First Map
+
+library(leaflet)
+my_map <- leaflet() %>% 
+  addTiles()
+my_map <- my_map %>%
+            addMarkers(lat=38.624691, lng=-90.184776, popup="St Louis Arch")
+            my_map
